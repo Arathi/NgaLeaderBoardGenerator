@@ -1,0 +1,28 @@
+td.title {
+  text-align: center;
+  background-color: #f19000;
+  font-size: 25px;
+  font-weight:bold;
+}
+td.rank {
+  text-align: center;
+  background-color: #b6000b;
+  font-size: 25px;
+  font-weight:bold;
+}
+td.score {
+  text-align: center;
+  font-size: 25px;
+  width: 75px;
+}
+td.servant-container {
+  padding-top: 5px;
+  padding-left: 5px;
+}
+img.avatar {
+  width: 86px;
+  height: 95px;
+}
+a.servant {
+  margin-right: 5px;
+}
