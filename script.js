@@ -1,4 +1,6 @@
 function createLeaderBoard(data) {
+  $("table#leaderboard").empty();
+  
   var titleHtml = "<tr><td colspan='2' class='title'>" + data.title + "</td></tr>";
   $("table#leaderboard").append(titleHtml);
   
@@ -27,13 +29,23 @@ function createLeaderBoard(data) {
   }
 }
 
-$(document).ready(function() {
+function reloadLeaderBoard() {
+  var rare = $("select#ddl-rare").val();
+  var url = "leaderboard_" + rare + ".json";
   $.ajax({
-    "url": "leaderboard_sr.json",
+    "url": url,
     "dataType": "json",
     "success": createLeaderBoard,
     "error": function(data) {
       console.log("error");
     }
   });
+}
+
+$(document).ready(function() {
+  reloadLeaderBoard();
+});
+
+$("#btn-generate").click(function() {
+  reloadLeaderBoard();
 });

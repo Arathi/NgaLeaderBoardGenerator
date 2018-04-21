@@ -19,10 +19,28 @@ td.servant-container {
   padding-top: 5px;
   padding-left: 5px;
 }
+table#leaderboard {
+  border-collapse: collapse;
+  width: 996px;
+}
 img.avatar {
   width: 86px;
   height: 95px;
 }
 a.servant {
   margin-right: 5px;
+}
+div.nav {
+  margin-bottom: 10px;
+}
+a.button {
+  font: bold 11px Arial;
+  text-decoration: none;
+  background-color: #EEE;
+  color: #333333;
+  padding: 2px 6px 2px 6px;
+  border-top: 1px solid #CCC;
+  border-right: 1px solid #333;
+  border-bottom: 1px solid #333;
+  border-left: 1px solid #CCC;
 }

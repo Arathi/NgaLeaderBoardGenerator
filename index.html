@@ -7,7 +7,17 @@
     <link href="style.css" rel="stylesheet" />
   </head>
   <body>
-    <table id="leaderboard" border="1" cellspacing="0" bordercolor="#000000" style="border-collapse: collapse;" width="1080">
+    <div class="nav">
+      <form id="frm">
+        稀有度：
+        <select id="ddl-rare">
+          <option value="ssr" selected>SSR</option>
+          <option value="sr">SR</option>
+        </select>
+        <a href="#" id="btn-generate" class="button">生成</a>
+      </form>
+    </div>
+    <table id="leaderboard" border="1" cellspacing="0" bordercolor="#000000">
     </table>
     <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
     <script src="script.js"></script>
