@@ -29,7 +29,7 @@ function createLeaderBoard(data) {
 
 $(document).ready(function() {
   $.ajax({
-    "url": "leaderboard.json",
+    "url": "leaderboard_sr.json",
     "dataType": "json",
     "success": createLeaderBoard,
     "error": function(data) {
