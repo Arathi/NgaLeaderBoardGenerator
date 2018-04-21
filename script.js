@@ -31,7 +31,7 @@ function createLeaderBoard(data) {
 
 function reloadLeaderBoard() {
   var rare = $("select#ddl-rare").val();
-  var url = "leaderboard_" + rare + ".json";
+  var url = "leaderboard_" + rare + ".json?t=1524313206";
   $.ajax({
     "url": url,
     "dataType": "json",
